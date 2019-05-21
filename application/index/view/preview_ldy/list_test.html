@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>{$type.meta_title}</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="keywords" content="">
+
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+
+	<meta name="format-detection" content="telephone=no,address=no">
+
+	<link href="__CDN__/ldy_assets/style/style_3.css" rel="stylesheet" type="text/css">
+
+	<link href="__CDN__/ldy_assets/style/liuyan.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="__CDN__/ldy_assets/style/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__CDN__/ldy_assets/style/jquery.min.js"></script>
+	<script type="text/javascript" src="__CDN__/ldy_assets/style/clipboard.min.js"></script>
+
+	<!-- 图片轮播引入boostrap -->
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="//cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	<script type="text/javascript">
+        function sjs(argument) {
+            document.write(Math.floor(Math.random()*10000+1))
+        }
+	</script>
+	<!-- <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?523cfcd8e8e461793d6b14be17907727";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script> -->
+
+</head>
+
+<body id="wxfixed">
+
+<div class="header">
+
+
+	<div class="nav fixed">
+
+		<ul>
+
+			<li class="tit-none clt">[:title]</li>
+
+			<li class="tit-none crt"><a href="javascript:return false;" class="cl-on"  onclick="">关注问题</a><a href="#test">写答案</a></li>
+
+			<li class="nvlog">南宁旅游攻略</li>
+
+			<li><a href="" >关于</a></li>
+
+			<li><a href="" >联系</a></li>
+
+			<li><a href="" >线路</a></li>
+
+			<li><a href="">首页</a></li>
+
+		</ul>
+
+	</div>
+
+	<div class="head">
+
+		<div class="head-ct">
+
+			<div class="hct-lt">
+
+				<div class="hct-tags"><a href="javascript:return false;">南宁旅游攻略</a><a href="javascript:return false;">南宁旅游要多少费用</a><a href="javascript:return false;">注意事项</a></div>
+
+				<h1>{$type.meta_title}</h1><br>
+
+				{if condition="count($banners)>0"}
+				<!--图片轮播代码 start-->
+				<div id="myCarousel" class="carousel slide">
+					<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+						{foreach name="banners" item="vo" key="k"}
+						<li data-target="#myCarousel" data-slide-to="{$k}" class="active"></li>
+						{/foreach}
+					</ol>
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner">
+						{foreach name="$banners" item="vo" key="k"}
+						<div class="item {if condition='$k == 0'} active{/if}">
+							<img src="{$vo}" >
+						</div>
+						{/foreach}
+
+						<!--<div class="item active">-->
+						<!--<img src="__CDN__/ldy_assets/style/jbx1.jpg" alt="First slide">-->
+						<!--</div>-->
+						<!--<div class="item">-->
+						<!--<img src="__CDN__/ldy_assets/style/xl-1list_4.jpg" alt="Second slide">-->
+						<!--</div>-->
+						<!--<div class="item">-->
+						<!--<img src="__CDN__/ldy_assets/style/xl-1list_44.jpg" alt="Third slide">-->
+						<!--</div>-->
+					</div>
+					<!-- 轮播（Carousel）导航 -->
+					<a class="carousel-control left" href="#myCarousel"
+					   data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
+					<a class="carousel-control right" href="#myCarousel"
+					   data-slide="next">&rsaquo;</a>
+				</div>
+				<!--图片轮播代码 end-->
+				{/if}
+
+
+				<p>{$type.content}</p>
+
+			</div>
+
+			<div class="hct-rt">
+
+				<div class="ht-rrt"><span>被浏览</span><b><script>document.write(Math.floor(Math.random()*10000))</script><span></span></b></div>
+
+				<div class="ht-rlt"><span>关注者</span><b><script>document.write(Math.floor(Math.random()*5000))</script><span></span></b></div>
+
+			</div>
+
+		</div>
+
+		<div class="head-ft">
+
+			<a href="javascript:return false;" class="cl-on"  onclick="">关注问题</a><a href="#test">写答案</a>
+
+			<span><a href="#test" class="cmd-pl"><i class="ico ico-pl"></i>11&nbsp;条评论</a></span><!--<span><i class="ico ico-fx"></i>分享</span>--><!--<span><i class="ico ico-yq"></i>邀请</span>-->
+
+		</div>
+
+	</div>
+
+
+</div>
+
+
+
+
+
+<div class="ctt">
+
+	<div class="clt ctbox">
+
+		<div class="cmlist list1"><b>11&nbsp;个回答</b><span>默认排序&nbsp;&nbsp;⇅&nbsp;</span></div>
+
+
+
+		{volist name=":article($type['id'],'','level asc')" id="vo"}
+
+		<div class="cmlist">
+
+			<div class="cminfo"><img src="{$vo.photo}"/><b>{$vo.nickname}</b></div>
+
+			<div class="cmnote cl888"><script>document.write(Math.floor(Math.random()*400))</script><span></span>人赞同了该回答</div>
+
+			<div class="cmdetail">
+
+				{$vo.content}
+
+			</div>
+
+			<div class="cmdata">
+
+				<p class="cl888">{$vo.description}</p>
+
+				<div class="cmdtb">
+
+					<span><a href="javascript:return false;" class="heart" id="like1" rel="like">赞&nbsp;<i class="likeCount" id="likeCount1"></i></a></span>
+
+					<span id="zhankai1"><i class="ico ico-pl"></i><a href="#test1" class="cmd-pl">评论</a></span><!--<span><i class="ico ico-fx"></i>分享</span>--><span onclick=""><i class="ico ico-sc"></i>收藏</span><span class="ganxie"><i class="ico ico-gx"></i>感谢</span>
+
+				</div>
+
+			</div>
+
+			<ul class="cmpl" id="ctli1">
+
+				<!-- <li class="cpl-1 noboder"><b>5&nbsp;条评论</b></li> -->
+
+
+				{volist name=":answer($vo['doc_id'])" id="so"}
+				<li><img class="tx" src="{$so.photo}" /><span>{$so.a_nickname}</span><span class="pl-time"></span>
+
+					<p>
+						{notempty name="so.q_nickname"}
+						<font class="mcolor">@{$so.q_nickname}</font>
+						{/notempty}
+						{$so.content}
+					</p>
+				</li>
+				{/volist}
+
+
+			</ul>
+
+		</div>
+
+		{/volist}
+
+
+
+
+
+		<div class="cmlist">
+
+			<div class="comments"> <a name="comments" id="comments"></a>
+
+				<div class="ds-thread">
+
+					<div id="ds-thread">
+
+						<div id="ds-reset">
+
+							<ds-toolbar>
+
+								<div class="ds-toolbar">
+
+									<ds-login-buttons>
+
+										<div class="ds-login-buttons">
+
+
+
+											<div class="ds-social-links">
+
+
+
+											</div>
+
+										</div>
+
+									</ds-login-buttons>
+
+								</div>
+
+							</ds-toolbar>
+
+							<ds-reply-box>
+
+								<div id="dsReplyBoxBlock" class="ds-replybox ">
+
+									<ds-avatar-visitor><a class="ds-avatar" onclick="return false" target="_self" title="" href="javascript:void(0);">
+
+										<ds-avatar-image size=""><img src="__CDN__/ldy_assets/style/81666.jpg" alt=""></ds-avatar-image>
+
+									</a></ds-avatar-visitor>
+
+									<form id="dsReplyForm" method="post" onsubmit="return false;">
+
+										<div class="ds-textarea-wrapper ds-rounded-top">
+
+											<textarea name="content" id="dsMessageTextarea" title="Ctrl + Enter 快捷提交" placeholder="请输入您的评论内容!"></textarea>
+
+											<pre class="ds-hidden-text"></pre>
+
+										</div>
+
+										<div class="ds-post-toolbar">
+
+											<div class="ds-post-options ds-gradient-bg"></div>
+
+											<button name="submit" type="button" class="ds-post-button " onclick="comment();"> 发布 </button>
+
+											<div class="ds-toolbar-buttons"><a class="ds-toolbar-button ds-add-emote" title="插入表情"></a><a class="ds-toolbar-button ds-add-image" title="插入图片"></a></div>
+
+										</div>
+
+									</form>
+
+								</div>
+
+							</ds-reply-box>
+
+
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="ctt fixed">
+
+		<div class="crt">
+
+			<div class="ctbox hot">
+
+				<h3>其她人关注</h3>
+
+				<ul>
+
+					<li><a href="javascript:return false;">去南宁一般需要多少钱？</a>23&nbsp;个回答</li>
+
+					<li><a href="javascript:return false;">南宁现在热不？气温在多少度啊？</a>16&nbsp;个回答</li>
+
+					<li><a href="javascript:return false;">南宁玩几天合适呢？</a>7&nbsp;个回答</li>
+
+					<li><a href="javascript:return false;">南宁、阳朔5日游求推荐攻略？</a>5&nbsp;个回答</li>
+
+				</ul>
+
+			</div>
+
+			<div class="ctbox cmd">
+
+				<h3>相关游记推荐</h3>
+
+				<ul>
+
+					<li>
+
+						<div class="cmd-img"><a href="javascript:return false;"><img src="__CDN__/ldy_assets/style/jbx1.jpg"></a></div>
+
+						<div class="cmd-title"><a href="javascript:return false;">南宁、阳朔、龙脊四天旅游攻略+旅行详记</a></div>
+
+					</li>
+
+					<li>
+
+						<div class="cmd-img"><a href="javascript:return false;"><img src="__CDN__/ldy_assets/style/xl-1list_4.jpg"></a></div>
+
+						<div class="cmd-title"><a href="javascript:return false;">关于南宁旅游的攻略，路线和注意事项</a></div>
+
+					</li>
+
+					<li>
+
+						<div class="cmd-img"><a href="javascript:return false;"><img src="__CDN__/ldy_assets/style/xl-1list_44.jpg"></a></div>
+
+						<div class="cmd-title"><a href="javascript:return false;">首去必看 | 南宁不可错过的五大景点</a></div>
+
+					</li>
+
+					<li>
+
+						<div class="cmd-img"><a href="javascript:return false;"><img src="__CDN__/ldy_assets/style/xl-1list_51.jpg"></a></div>
+
+						<div class="cmd-title"><a href="javascript:return false;">南宁三天两晚寻梦之旅——自由行全面攻略</a></div>
+
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+
+<div  style=" font-size:10px; text-align:center; color:#999; margin-bottom:10px;margin-top:20px;">
+
+	{config name="web_name"/} {config name="icp"/}
+
+</div>
+
+<div  style=" font-size:10px; text-align:center; color:#999; margin-bottom:10px;margin-top:20px;">
+
+	<a href="http://glsxly.com/index.php?s=/article/lists/category/1.html">关于我们</a>
+
+	<a href="http://glsxly.com/index.php?s=/article/lists/category/6.html">联系我们</a>
+
+</div>
+
+<div  style=" font-size:10px; text-align:center; color:#999; margin-bottom:10px;margin-top:20px;">
+
+	直线电话:{config name="main_tel"/}
+
+</div>
+
+<div style="display:none;"><script type="text/javascript" src="__CDN__/ldy_assets/style/tj.js"></script></div>
+
+<div id="mask" class="mask" style="display:none;">
+	<div class="pop-pcwx">
+		<div class="pop-title"><a href="javascript:void(0)" onclick="hidbox()" style="float:right;">X</a>微信号复制成功!</div>
+		<div class="pop-content">
+			<p class="pop-l"><span>{$kefu.name}</span>的微信号<font class="pop-pn">{$kefu.tel}</font>复制成功</p>
+			<div id="pop-pc" class="pop-pic" style="display:none;"><p>请扫描下方二维码添加好友</p><img class="pop-qrcode"  src="{$kefu.wximg}" /></div>
+			<div id="pop-mob" class="pop-pic">
+				<div class="pop-ap"><img class="pop-mqrcode"  src="{$kefu.wximg}" /></div>
+				<p class="pop-ts2">以下三步快速添加好友</p>
+				<p class="pop-ts">①打开微信 ②添加朋友 ③粘贴</p>
+			</div>
+
+		</div>
+		<div class="pop-bottom"><a href="weixin://" onclick="hidbox()">确定</a><a href="tel://" onclick="callPhone()">拨打电话</a></div>
+		<img src="/images/da.jpg" data-original="/images/yrz.png" style="display:none;" />
+	</div>
+</div>
+<script>
+    $(function(){
+        var name="{$kefu.name}";
+        var tel="{$kefu.tel}";
+        var qita="{$kefu.qita}";
+        $('.rname').html(name);
+        $('.kefuwx').html(tel);
+        $('.qita').html(qita);
+    });
+
+    function callPhone(){
+        window.location.href = "tel:{$kefu.tel}";
+        hidbox();
+    }
+
+</script>
+<script type="text/javascript">
+
+    // alert($);
+
+    $(function(){
+        $(".kefuwx").each(function(index, element) {
+            $(this).click(function(e) {
+                showbox();
+            });
+        });
+
+        if(IsPC())
+        {
+            $("#pop-pc").attr("style","display:block;");
+            $("#pop-mob").attr("style","display:none;");
+        }
+
+        var tel="{$kefu.tel}";
+        var clipboard = new ClipboardJS(".kefuwx",{
+            text: function() {
+                return tel;}
+        });
+        //复制失败执行的回调，可选
+        clipboard.on('error', function(e) {
+            alert("复制失败，请手动复制");
+        });
+
+        // alert('erfswgfs');
+    });
+    function showbox()
+    {
+        $("#mask").fadeIn();
+    }
+    function hidbox()
+    {
+        $("#mask").fadeOut();
+    }
+
+
+    function IsPC(){
+        var userAgentInfo = navigator.userAgent;
+        var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
+        }
+        return flag;
+    }
+
+</script>
+<script src="__CDN__/ldy_assets/style/jquery.min.js"></script>
+
+</body>
+
+
+
+<style>
+	.tel_sign{
+		color:red;
+		font-size:17px;
+		font-weight:bold;
+	}
+	.name_sign{
+
+	}
+	.mask {
+		position:fixed;
+		z-index:99999999999999;
+		top:0;
+		left:0;
+		background:rgba(0,0,0,0.4);
+		width:100%;
+		height:100%;
+		display:none;
+	}
+	.pop-pcwx {
+		width:96%;
+		max-width:400px;
+		background:#fff;
+		overflow:hidden;
+		border:1px solid rgba(0,0,0,0.5);
+		margin:20vh auto 0;
+		border-radius:4px;
+		box-shadow:1px 2px 15px rgba(0,0,0,0.1);
+	}
+	.pop-title {
+		height:50px;
+		line-height:50px;
+		font-size:18px;
+		font-weight:400;
+		padding:0px 15px;
+		border-bottom:solid 1px #eeeeee;
+	}
+	.pop-content {
+		margin-top:20px;
+		font-size:15px;
+		text-align:center;
+		color:#666666;
+		border-bottom:solid 1px #eeeeee;
+	}
+	.pop-content p {
+		margin:0px;
+		line-height:25px;
+	}
+	.pop-l span {
+		display:inline-block;
+		padding:0px 5px;
+		background-color:#e6e6e6;
+		color:#2196F3;
+		line-height:25px;
+		height:25px;
+		border-radius:5px;
+		margin-right:3px;
+	}
+	.pop-l span i {
+		display:block;
+		float:left;
+		height:62px;
+		width:62px;
+	}
+	.pop-pn {
+		color:#ff0000;
+		margin:0px 5px;
+	}
+	img.pop-qrcode {
+		max-width:250px;
+		margin:0px;
+	}
+	.pop-bottom a {
+		display:inline-block;
+		width:50%;
+		text-align:center;
+		text-decoration:none;
+		height:50px;
+		line-height:50px;
+		box-shadow:1px 0px 1px #eee;
+		color:#1381ff;
+	}
+	.pop-pic {
+		background-color:#f0f0f0;
+		margin-bottom:15px;
+		margin-top:15px;
+	}
+	.pop-pic p {
+		color:#2196F3;
+		height:30px;
+		line-height:30px;
+	}
+	.pop-pic p.pop-m {
+		color:#666666;
+		font-size:12px;
+	}
+	.pop-content p.pop-ts {
+		padding-bottom:5px;
+		color:#ff6600;
+	}
+	.pop-content p.pop-ts2 {
+		height:20px;
+		line-height:20px;
+		color:#555555;
+	}
+	.pop-ap {
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+	img.pop-mqrcode {
+		width:25%;
+		margin:0px;
+	}
+</style>
+<script>
+</script>
+</html>

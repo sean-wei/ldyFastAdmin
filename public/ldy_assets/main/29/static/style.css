@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document BY FJ 41526283.17.1204 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;font-family:Arial,"\5fae\8f6f\96c5\9ed1";}
+fieldset,img{border:0;}
+img{vertical-align:top;}
+:focus{outline:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:normal;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+abbr,acronym{border:0;font-variant:normal;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+code,kbd,samp,tt{font-size:100%;}
+input,button,textarea,select{*font-size:100%;}
+ol,ul{list-style: none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align: left;}
+sup,sub{font-size:100%;vertical-align:baseline;}
+a{font-family:Arial,"\5fae\8f6f\96c5\9ed1";}
+a:hover{color:#00AA98; cursor:pointer;text-decoration:underline;}
+a:link,a:visited,ins{text-decoration: none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+iframe{margin:0px;padding:0px;border:none;}
+q:before,q:after{content:''}
+li{list-style:none}
+caption,th{text-align:left}
+q:before,q:after{content:''}
+html{background-image:url(about:blank);background-attachment:fixed; background: #f8f8f8;}
+body{color:#333;font-size:12px;line-height:22px; width: 100%; max-width: 640px; margin: auto; text-align: left; background:#f2f2f2; position: relative;}
+a{outline:0;text-decoration:none;color:#333}
+a:hover{text-decoration:none;color:#ff3300}
+div {margin: auto; color: #666;}
+/* 头部开始 */
+header{width: 100%; height:44px; line-height: 44px; background: #ffffff; font-size: 16px; text-align: center; color: #666; position: fixed; border-bottom: 1px #f2f2f2 solid; top: 0px;}
+header h1{float: left; margin-left: 10px; font-weight: 100;}
+header h2{float: right;}
+header h2 img{width:20px; margin: 15px 15px 0px 0px;}
+header h3{float: right;}
+header h3 img{width:20px; margin: 13px 10px 0px 0px;}
+/* 部分 */
+.logo{width:100%;overflow: hidden; margin-top:44px;background:#fff; }
+.logo .cons{width: 96%; height:80px;  border-bottom: 1px #f2f2f2 solid; }
+.logo .cons .logos{width:60px; height:80px; float: left;}
+.logo .cons .logos img{width:50px; margin: 12px 0px 0px 10px;}
+.logo .cons .texts{width:120px; float: left; height: 80px;}
+.logo .cons .texts h1{width: 120px; height:18px; line-height: 18px; font-size: 16px; font-weight: 100; margin-top:23px;}
+.logo .cons .texts h2{width: 120px; height:18px; line-height:18px; font-size: 12px; font-weight: 100; margin-top:3px; color: #999;}
+.logo .cons .tel{width:72px; height: 24px; float: right; margin-top:28px; font-size: 14px; text-align: center; margin-right: 10px;}
+.logo .cons .tel a{display: block;border:1px #ccc solid; font-size: 14px; color: #666;}
+.logo .cons .tel a:hover{display: block;border:1px #f30 solid; background: #f30; font-size: 14px; color: #fff;}
+/* 提问标题部分 */
+.titles{width: 100%; overflow: hidden; background: #fff;}
+.titles .cons{width: 96%; line-height:40px; font-size:24px; color: #666; margin-top: 10px; border-bottom: 1px #f2f2f2 solid;}
+/* 最佳答案 */
+.box{width:100%; overflow:hidden; background: #fff; margin-top:5px;}
+.box .titles{width:96%; height:50px; line-height:50px; font-size: 16px;}
+.box .titles img{width:28px; margin:15px; }
+.box .consx{width: 90%; height: auto; line-height: 24px; font-size: 14px; padding-top: 10px;}
+.box .consx img{max-width: 100%; height: auto; width: auto\9;}
+.box .fenxiang {width: 96%; height: 30px; line-height:30px; margin-top: 10px;}
+.box .fenxiang h1{float: left;}
+.box .names{width: 96%; height:40px; line-height:40px; border-bottom: 1px #f2f2f2 solid; font-size: 12px; color: #999; margin-bottom: 5px;}
+.box .names span{width: auto; height:40px; line-height:40px; margin:0px 10px;}
+.box .names span img{width:16px; margin: 10px 5px 0px 0px;}
+.gao {margin-top: 10px;}
+
+.box .names p{width: auto; height:40px; line-height:40px; margin:0px 10px; float: left;}
+.box .names p img{width:28px; margin: 6px 5px 0px 0px; border-radius:50%;}
+/* 小回复 */
+/* 评论框 */
+.box .plc{width: 90%; height: auto; overflow: auto; margin: auto; position: relative;border-bottom: 1px #f1f1f1 solid; margin-bottom:5px;}
+.box .tops{width:100%; height: 5px; overflow: hidden;}
+.box .tops .sjx{width: 9px; height: 5px; background: url(); position: absolute; left:50%; top:1px;}
+.box .cons {width:99%; height: auto; overflow: auto; border-top: 1px #f1f1f1 solid;border-left: 1px #f1f1f1 solid;border-right: 1px #f1f1f1 solid; }
+.box .cons .topx{width:100%; height: 40px; line-height: 40px; font-size: 12px;}
+.box .cons .topx img{width: 26px; height: 26px;border-radius:50%; margin: 7px; float: left;}
+.box .cons .topx span{width: auto; line-height: 40px; float: right; margin-right: 20px; font-size: 12px; color:#999;}
+.box .cons .topx em{font-size: 12px; color: #ff9d00;}
+.box .cons .conx{width: 90%; line-height: 18px; font-size:14px; color: #666; margin:auto; padding:5px 0;}
+/* 相关问题 */
+.wenti {width: 100%; height: auto; overflow: hidden; margin-top:5px; background: #fff; padding-bottom:15px;}
+.wenti .tops{width: 96%; height: 42px; line-height: 42px; font-size: 16px; margin-top:10px;}
+.wenti .cons{width: 96%; height:auto; line-height: 32px; overflow: hidden;}
+.wenti .cons ul{margin: 0px;padding: 0px; list-style: none;}
+.wenti .cons ul li{height: 32px; line-height: 32px; overflow: hidden; background: url("../images4/15.gif") left center no-repeat; padding-left:6px;}
+.wenti .cons ul li a{font-size: 12px; color: #666;}
+.wenti .cons ul li span{width:auto; height: 32px; line-height: 32px; background: url("../images4/16.png") left center no-repeat; float: right; padding-left: 20px;}
+.wenti .cons ul li em{color: #ff3300;}
+/* 搜索 */
+.sousuo {width: 100%; height: auto; overflow: hidden; margin-top:5px; background: #fff; padding-bottom:15px;}
+.sousuo .tops{width: 96%; height: 42px; line-height: 42px; font-size: 16px; margin-top:10px;}
+.sousuo .cons{width: 96%; height:auto; line-height: 32px; overflow: hidden;}
+.sousuo .cons ul{margin: 0px;padding: 0px; list-style: none;}
+.sousuo .cons ul li{width:45%; height:32px; line-height: 32px; overflow: hidden; background: url("../images4/15.gif") left center no-repeat; padding-left:6px; float: left; color: #3d3dd9;}
+.sousuo .cons ul li a{font-size: 12px; color: #3d3dd9;}
+.sousuo .cons ul li em{color: #ff3300;}
+/* 搜索条 */
+.sousuok {width: 100%; height:60px; margin-top: 10px; background: #ffffff;}
+.sousuok .ssk{width: 60%; height: 32px; line-height: 32px; border-radius:5px; border: 1px #ccc solid; margin-left: 20px; padding: 0px 10px; float: left; margin-right:10px; margin-top: 12px;}
+.sousuok .tijiao{width:80px; height:32px; line-height: 32px; border-radius:5px; border: 1px #317ef3 solid; font-size: 12px; background: #317ef3;float: left; color: #fff; margin-top: 12px;}
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
+textarea {  -webkit-appearance: none;} 
+/* 底部版权信息 */
+.footer {width: 100%; height: auto; overflow:hidden; margin-top: 5px; background: #FFF; text-align: center; font-size: 6px; line-height: 18px; padding: 10px 0px; color: #b6d6dc;}
+/* 列表显示方式 */
+.list {width: 100%; height: auto; overflow: hidden;}
+.list ul{margin: 0px;padding: 0px; list-style: none;}
+.list ul li{width: 100%; height:auto; overflow: hidden; margin-top: 10px; background: #fff;}
+.list ul li .title{width:96%; height: auto; line-height: 30px; font-size: 20px; padding: 10px 0px;}
+.list ul li .title em{color: #f30;}
+.list ul li .title span{color: #317ef3;}
+.list ul li .conte{width: 96%; height:120px; overflow: hidden;}
+.list ul li .conte img{width: 140px; height: 120px; float: left;}
+.list ul li .conte .texts{float: left; width:55%; margin-left: 10px; line-height:24px; height: 120px; font-size: 15px; overflow: hidden;}
+.list ul li .time{width: 96%; height:50px; line-height:40px; overflow: hidden; }
+.list ul li .time em{color: #999; margin: 0px 15px;}
+.list ul li .time span{color: #999; margin: 0px 15px;}
+
+img{max-width: 100%;height: auto;width: auto\9;}
+
+
+
+
+
+
+
+
+
+

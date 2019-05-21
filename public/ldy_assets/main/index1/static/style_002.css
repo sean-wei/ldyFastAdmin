@@ -1,0 +1,13 @@
+.zaixian{width:100%;height:40px;line-height:40px;background:#fff;position:fixed;bottom:48px;left:0;text-align:center;background:url("../img/nbox.png")/*tpa=http://trip.laotielvyou.com/static/img/nbox.png*/;font-size:17px;color:#888;}
+.zaixian b{padding:0 10px;}
+.zaixian span{color:red;padding:0 5px;}
+.bznone{width:100%;position:fixed;left:0;bottom:0;display:none;}
+.bznone .bza{display:block;max-width:640px;margin:auto;}
+.bznone img{width:100%;}
+.foot1{width:100%;height:48px;background:#fff;position:fixed;bottom:0;left:0;}
+.bznone{position:fixed;bottom:48px;}
+.foot1 .flt,.foot1 .frt,.foot1 .flt1{width:50%;color:#fff;display:block;height:40px;line-height:40px;font-size:1.2em;text-align:center;margin-top:4px;}
+.foot1 .flt{float:left;margin-left:0%;background:#22ca85;}
+.foot1 .flt1{float:left;margin-left:0%;background:#f19116;}
+.foot1 .frt{float:right;margin-right:0%;background:#f19116;}
+@media (min-width:800px){.bznone{width:100%;}.bznone a{margin:auto;display:block;width:550px;}}
