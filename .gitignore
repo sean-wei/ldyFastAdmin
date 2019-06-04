@@ -1,5 +1,7 @@
 ##ignore this files##
-/runtime/
-/application/database.php
+.DS_Store
+.idea/
+runtime/
+application/database.php
 
 
