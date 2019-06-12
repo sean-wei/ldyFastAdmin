@@ -395,8 +395,23 @@ if (!function_exists('hsv2rgb')) {
     }
 
 
+    /**
+     *  转换为json格式-小程序接口
+     *
+     * @param $status
+     * @param $msg
+     * @param array $data
+     * @return string
+     */
+    function toJson($status, $msg, $data=[]){
+        $result = [
+            'status' => $status,
+            'msg' => $msg,
+            'data' => $data
+        ];
 
-
+        return json_encode($result);
+    }
 
 
 

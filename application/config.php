@@ -276,4 +276,21 @@ return [
         //API接口地址
         'api_url'             => 'https://api.fastadmin.net',
     ],
+
+
+
+
+
+
+    //域名
+    'root_address' => 'http://test1.jxbaidu.net',
+
+
+
+
+
+
+
+
+
 ];
